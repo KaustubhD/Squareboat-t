@@ -6,12 +6,11 @@ import { RegisterComponent } from './components/register/register.component';
 import { UsersListComponent } from './components/users-list/users-list.component';
 
 const routes: Routes = [
-  // {path: '', component: HomeComponent},
   {path: 'login', component: LoginComponent },
   {path: 'register', component: RegisterComponent },
   {path: 'home', component: HomeComponent},
   {path: 'users', component: UsersListComponent},
-  {path: '**', redirectTo: ""},
+  {path: '**', redirectTo: 'login' },
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes, {
