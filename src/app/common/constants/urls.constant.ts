@@ -1,4 +1,4 @@
-import { environments } from "src/environments";
+import { environments } from "src/environments/environments";
 
 const apiUrl = environments.API_URL;
 
